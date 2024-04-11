@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    background-color: #F3CC79;
+    font-family: "Nunito", sans-serif;
+    margin: 0px;
+}
+
+h1  {
+    margin: 0px;
+}
+
+button {
+    border: none;
+}
+
+button:hover {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header {
+    display: flex;
+    margin: 0px 50px;
+    flex: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    width: 50px;
+    height: 30px;
+}
+
+.comp-name  {
+    color: #d1604d;
+    font-size: 48pt;
+    font-family: Arial;
+    text-shadow: 3px 1px #fefffe, 5px 3px #fefffe;
+    letter-spacing: 3px;
+    margin: 0px;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    /* FONT DEFINITIONS */
+    font-size: 1rem;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+nav ul li:hover {
+    background-color: #ffffff;
+    border-bottom: solid 5px #000000;
+    transition: 0.2s;
+    padding: 5px 20px;
+}
+
+.reserve-button {
+    background-color: #000000;
+    color: #ffffff;
+    width: fit-content;
+    padding: 10px 20px;
+    font-weight: 800;
+}
+
+.reserve-button:hover {
+    background-color: #F3B431;
+    color: #000000;
+    border-radius: 16px;
+    transition: 0.3s;
+}
+
+.reserve-button:active {
+    background-color: #FFFFFF;
+    color: #000000;
+    border-radius: 16px;
+}
+
+
+.hero-section {
+    display: flex;
+    flex: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px 0px;
+    background-color: #2C3335;
+    color: #ffffff;
+}
+
+
+.hero-image-container {
+    width: 420px;
+    height: 408px;
+    background-image: url("./images/hero-image.png");
+    border-radius: 50%;
+    background-color: #6A89CC;
+}
+
+.services-container {
+    width: inherit;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.services-section h2 {
+    font-size: 2rem;
+    margin-top: 5px;
+    font-weight: 800;
+    width: fit-content;
+    padding: 20px;
+    color: #ffffff;
+    background-color: #30336B;
+}
+
+.cards-container {
+    display: flex;
+    padding-bottom: 40px;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #DAE0E2;
+    border: solid 3px #000000;
+    border-radius: 16px;
+    height: 400px;
+    width: 300px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-blurb {
+    width: 300px;
+    margin-left: 20px;
+}
+
+.card-blurb h3 {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+
+}
+
+.card-blurb p {
+    margin-top: 0px;
+    font-size: 1.2rem;
+}
+
+.hair-style-image {
+    background-image: url("./images/hair-styling.jpg");
+    width: 100%;
+    height: 220px;
+
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.make-up-image {
+    background-image: url("./images/makeup-image.jpg");
+    width: 100%;
+    height: 220px;
+
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.manicure-image {
+    background-image: url("./images/manicure.jpg");
+    width: 100%;
+    height: 220px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.reservation-form   {
+    background-color: #2C3335;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reservation-container  {
+    width: 19vw;
+    margin-left: 40px;
+    padding-bottom: 20px;
+}
+
+.reservation-container h2    {
+    background-color: #F3B431;
+    width: fit-content;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+form    {
+    display: flex;
+    flex-direction: column;
+    width: 13.6vw;
+}
+
+label   {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+input   {
+    margin-top: 10px;
+    width: 13vw;
+    padding: 5px;
+    font-size: 16pt;
+}
+
+.form-btn   {
+    font-size: 1.3rem;
+    padding: 20px;
+    align-self: center;
+}
+
+@media only screen and (max-width: 900px) {
+
+    nav {
+        margin-bottom: 50px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .hero-section {
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .hero-image-container {
+        display: none;
+    }
+
+    .services-container {
+        align-items: center;
+        margin-left: 0px;
+    }
+    .cards-container {
+        display: block;
+    }
+
+    .reservation-container  {
+        width: 55vw;
+    }
+
+    form    {
+        width: 40vw;
+    }
+
+    input   {
+        width: 38vw;
+    }
+
+}
